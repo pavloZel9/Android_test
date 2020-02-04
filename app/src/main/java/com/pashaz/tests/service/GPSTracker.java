@@ -88,7 +88,7 @@ public class GPSTracker extends Service {
           flag++;
         }
         latitude_save=location.getLatitude();
-        longitude_save=location.getLatitude();
+        longitude_save=location.getLongitude();
 
         Intent i = new Intent("location_update");
 

@@ -25,8 +25,8 @@ public class LoadingScreen extends AppCompatActivity {
     //Сохраняем первие координаты для презапуска карты
     if (prefs.getBoolean("firstrun", true)) {
 
-      saveText( "c0","50.45");
-      saveText( "c1","30.5233");
+      saveText( "c1","50.45");
+      saveText( "c0","30.5233");
 
       prefs.edit().putBoolean("firstrun", false).commit();
     }
