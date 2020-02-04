@@ -1,0 +1,20 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapFragment"
+    class="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fab_location"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="@dimen/fab_margin"
+    android:onClick="getLocation"
+    app:backgroundTint="#B2FF59"
+    app:srcCompat="@drawable/location_button" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
